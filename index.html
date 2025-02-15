@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Border Radius Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Border Radius Generator</h1>
+    <div class="preview" id="preview"></div>
+    <div class="slider-container">
+      <div class="slider-group">
+        <label for="topLeft">Top Left: <span id="valTopLeft">0</span>px</label>
+        <input type="range" id="topLeft" min="0" max="150" value="0">
+      </div>
+      <div class="slider-group">
+        <label for="topRight">Top Right: <span id="valTopRight">0</span>px</label>
+        <input type="range" id="topRight" min="0" max="150" value="0">
+      </div>
+      <div class="slider-group">
+        <label for="bottomRight">Bottom Right: <span id="valBottomRight">0</span>px</label>
+        <input type="range" id="bottomRight" min="0" max="150" value="0">
+      </div>
+      <div class="slider-group">
+        <label for="bottomLeft">Bottom Left: <span id="valBottomLeft">0</span>px</label>
+        <input type="range" id="bottomLeft" min="0" max="150" value="0">
+      </div>
+    </div>
+    <div class="code" id="cssCode">
+      border-radius: 0px 0px 0px 0px;
+    </div>
+    <button id="copyBtn">Copy CSS</button>
+  </div>
+
+  <script src="main.js">  </script>
+</body>
+</html>
